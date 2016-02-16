@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="GBK" ?>
+<ftps>
+		
+	<!--<ftpserver name="环保部信息中心" ip="202.108.253.198" port="221" username="user"
+		password="user" workingdirectory="/AQIData/" />
+		
+	-->
+	
+	<!--<ftpserver name="本机测试" ip="192.168.1.100" port="21" username="user"
+		password="user" workingdirectory="/" />
+		
+		
+    <ftpclient filepath="D:/每日城市最大日AQI值和首页污染物名称" filebakpath="E:/ftpservroot/每日城市最大日AQI值和首页污染物名称" filetemp="E:/ftpfiletemp/每日城市最大日AQI值和首页污染物名称"
+		ftpserverpath="每日城市最大日AQI值和首页污染物名称"  interruptime="30" />
+	<ftpclient filepath="D:/每小时城市最大AQI值和首页污染物名称" filebakpath="E:/ftpservroot/每小时城市最大AQI值和首页污染物名称" filetemp="E:/ftpfiletemp/每小时城市最大AQI值和首页污染物名称"
+		ftpserverpath="每小时城市最大AQI值和首页污染物名称" interruptime="15" />
+-->
+	
+	
+	<ftpserver name="localtest" ip="127.0.0.1" port="21" username="test1"
+		password="test1" workingdirectory="/" />
+		
+		
+	<ftpclient filepath="F:/fileget" filebakpath="E:/ftpservroot/每小时城市最大AQI值和首页污染物名称" filetemp="E:/ftpfiletemp/每小时城市最大AQI值和首页污染物名称"
+		ftpserverpath="1" interruptime="15" />
+
+
+
+</ftps>

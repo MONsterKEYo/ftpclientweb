@@ -93,35 +93,36 @@ public class FtpCilentThread implements Runnable  {
 		}
 	}
 
-//	public void upload() throws Exception{
-//		HashMap<String, FTPClient> hashmap = getFTPClients();
-//		// 1.先拷贝文件到临时目录的各个服务器ip的目录下
-//		Set<String> ss = hashmap.keySet();
-//		Iterator<String> ii = ss.iterator();
-//		while (ii.hasNext()) {
-//			String key = ii.next();
-//			String[] keys = key.split(",");
-//			movefile(ftpclientbean.getFilepath(), keys[0], false);
-//
-//		}
-//		// 2.拷贝到备份目录下（拷贝完成后删除），供本机的FTP服务器提供下载（本机安装FTP服务器提供下载功能）
-//		movefile(ftpclientbean.getFilepath(), ftpclientbean.getFilebakpath(),
-//				true);//测试状态 暂时设定为false，正式使用修改为true删除已拷贝的文件
+	public void upload() throws Exception{
+		HashMap<String, FTPClient> hashmap = getFTPClients();
+		// 1.先拷贝文件到临时目录的各个服务器ip的目录下
+		Set<String> ss = hashmap.keySet();
+		Iterator<String> ii = ss.iterator();
+		while (ii.hasNext()) {
+			String key = ii.next();
+			String[] keys = key.split(",");
+			movefile(ftpclientbean.getFilepath(), keys[0], false);
+
+		}
+		// 2.拷贝到备份目录下（拷贝完成后删除），供本机的FTP服务器提供下载（本机安装FTP服务器提供下载功能）
+		movefile(ftpclientbean.getFilepath(), ftpclientbean.getFilebakpath(),
+				true);//测试状态 暂时设定为false，正式使用修改为true删除已拷贝的文件
 
 		// 3.上传文件到ftp服务器
 
-//		Set<String> s = hashmap.keySet();
-//		Iterator<String> i = s.iterator();
-//		while (i.hasNext()) {
-//			String key = i.next();
-//			String[] keys = key.split(",");
-//			FTPClient ftpClient = hashmap.get(key);
-//
-//			FtpClientUtil.uploadManyFile(ftpClient, keys[1], keys[0],
-//					ftpclientbean.getFilebakpath());
-//			FtpClientUtil.closeServer(ftpClient,keys[1]);
-//		}
-//	}
+		Set<String> s = hashmap.keySet();
+		Iterator<String> i = s.iterator();
+		while (i.hasNext()) {
+			String key = i.next();
+			String[] keys = key.split(",");
+			FTPClient ftpClient = hashmap.get(key);
+
+			FtpClientUtil.uploadManyFile(ftpClient, keys[1], keys[0],
+					ftpclientbean.getFilebakpath());
+			FtpClientUtil.closeServer(ftpClient,keys[1]);
+		}
+	}
+	
 	public void download() throws Exception{
 		HashMap<String, FTPClient> hashmap = getFTPClients();
 		 boolean success = false;  

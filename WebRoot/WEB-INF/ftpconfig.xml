@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="GBK" ?>
 <ftps>
 		
-	<!--<ftpserver name="环保部信息中心" ip="202.108.253.198" port="221" username="user"
+	<!--<ftpserver name="" ip="" port="221" username="user"
 		password="user" workingdirectory="/AQIData/" />
 		
 	-->
@@ -17,8 +17,8 @@
 -->
 	
 	
-	<ftpserver name="localtest" ip="127.0.0.1" port="21" username="test1"
-		password="test1" workingdirectory="/" />
+	<ftpserver name="zongzhanftpserver" ip="11.204.0.100" port="21" username="datashare21"
+		password="datashare21" workingdirectory="/" />
 		
 		
 	<ftpclient filepath="F:/fileget" filebakpath="E:/ftpservroot/每小时城市最大AQI值和首页污染物名称" filetemp="E:/ftpfiletemp/每小时城市最大AQI值和首页污染物名称"

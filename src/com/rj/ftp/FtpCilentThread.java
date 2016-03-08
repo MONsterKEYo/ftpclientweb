@@ -124,6 +124,7 @@ public class FtpCilentThread implements Runnable  {
 	}
 	
 	public void download() throws Exception{
+		System.out.println("Downloading...");
 		HashMap<String, FTPClient> hashmap = getFTPClients();
 		 boolean success = false;  
 		    FTPClient ftp = new FTPClient();  

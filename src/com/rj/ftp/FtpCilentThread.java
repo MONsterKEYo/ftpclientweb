@@ -182,8 +182,8 @@ public class FtpCilentThread implements Runnable  {
 			
 			// ÀØ√ﬂ∑÷÷”
 			try {
-//				upload();
-				download();
+				upload();
+//				download();
 				Thread.sleep(1000 * 60 * ftpclientbean.getInterruptime());
 			}catch (InterruptedException e) {
 				log.error("…Ë÷√ÀØ√ﬂ ß∞‹£°",e);

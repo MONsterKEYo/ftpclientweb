@@ -2,6 +2,7 @@
 .myeclipse/
 .mymetadata
 WebRoot/WEB-INF/classes/
+WebRoot/WEB-INF/ftpconfig.xml
 #################
 ## Eclipse
 #################
